@@ -1,3 +1,6 @@
+/**
+ * Clase que está simulando el servicio de una lista de canciones
+ */
 export class SongsServices{
   songs = [
     {
@@ -6,7 +9,9 @@ export class SongsServices{
       artist: 'Michael Jackson',
       year: '1980',
       album: 'Thriller',
-      genres: ['R&B', 'Pop']
+      genres: ['Disco', 'Pop', 'Funk'],
+      listeners: 1400000,
+      songwriter: 'Rod Temperton'
     },
     {
       id: 2,
@@ -14,7 +19,19 @@ export class SongsServices{
       artist: 'Adele',
       year: '2011',
       album: '21',
-      genres: ['R&B']
+      genres: ['Rhythm and blues', 'Soul'],
+      listeners: 20100,
+      songwriter: 'Adele Adkins'
+    },
+    {
+      id: 3,
+      title: 'Blinding Lights',
+      artist: 'The Weeknd',
+      year: '2019',
+      album: 'Blinding Lights',
+      genres: ['Rhythm and blues', 'Soul', 'Synthwave'],
+      listeners: 950,
+      songwriter: 'Abel Tesfaye'
     }
   ]
 
