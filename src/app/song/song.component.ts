@@ -36,22 +36,4 @@ export class SongComponent implements OnInit {
     });
     this.song = this.songs.find((item:any) => item.id == this.songId);
   }
-/**
- * Función que concatena el número de reproducciones con un string, dependiendo
- * de una condición.
- * @returns {string} con el dato concatenado
- */
-  numberListeners(): string{
-    if (this.song.listeners >= 1000 && this.song.listeners < 1000000){
-      this.listeners = this.song.listeners + " Mil"
-    }
-    else if (this.song.listeners >= 1000000) {
-      this.listeners = this.song.listeners + " Milliones"
-    }
-    else{
-      this.listeners = this.song.listeners
-    }
-    return this.listeners;
-
-}
 }

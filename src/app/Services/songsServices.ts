@@ -10,7 +10,7 @@ export class SongsServices{
       year: '1980',
       album: 'Thriller',
       genres: ['Disco', 'Pop', 'Funk'],
-      listeners: 1400000,
+      producer: 'Quincy Jones',
       songwriter: 'Rod Temperton'
     },
     {
@@ -20,7 +20,7 @@ export class SongsServices{
       year: '2011',
       album: '21',
       genres: ['Rhythm and blues', 'Soul'],
-      listeners: 20100,
+      producer: 'Paul Epworth',
       songwriter: 'Adele Adkins'
     },
     {
@@ -30,7 +30,7 @@ export class SongsServices{
       year: '2019',
       album: 'Blinding Lights',
       genres: ['Rhythm and blues', 'Soul', 'Synthwave'],
-      listeners: 950,
+      producer: 'Max Martin',
       songwriter: 'Abel Tesfaye'
     }
   ]
