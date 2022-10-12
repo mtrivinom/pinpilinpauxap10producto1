@@ -1,0 +1,11 @@
+/* Estilos minimos componente canción */
+.song-header{
+  background-color: #ffe4c4;
+  padding: 25px;
+}
+.song-body{
+  padding-top: 50px;
+}
+.song-detail-item{
+  margin: 10px 0;
+}
