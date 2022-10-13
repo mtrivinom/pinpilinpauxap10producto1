@@ -31,7 +31,7 @@ export class SongComponent implements OnInit {
  * corresponde con el id.
  */
   ngOnInit(): void {
-    this.activatedRoute.paramMap.subscribe(params => {
+    this.activatedRoute.paramMap.subscribe((params: { get: (arg0: string) => string | null; }) => {
       this.songId = params.get('id');
     });
     this.song = this.songs.find((item:any) => item.id == this.songId);
