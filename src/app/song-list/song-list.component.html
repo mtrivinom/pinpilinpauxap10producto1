@@ -10,24 +10,18 @@
       <tr>
         <th>Title</th>
         <th>Artist</th>
-        <th>Year</th>
-        <th>Album</th>
-        <th>Gender</th>
-        <th>Songwriter</th>
         <th>Duration</th>
       </tr>
     </thead>
 <tbody>
 
   <tr *ngFor="let item of songs">
-    <td>{{item.title}}</td>
+    <td>
+      <a routerLink="/song/{{item.id}}">{{item.title}}</a>
+    </td>
     <td>{{item.artist}}</td>
-    <td>{{item.year}}</td>
-    <td>{{item.album}}</td>
-    <td>{{item.genres}}</td>
-    <td>{{item.songwriter}}</td>
     <td>{{item.duration}}</td>
-  </tr>
+     </tr>
 </tbody>
   </table>
 
