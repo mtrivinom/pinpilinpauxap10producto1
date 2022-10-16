@@ -103,18 +103,6 @@ export class SongsServices{
       songwriter: 'Abel Tesfaye',
       duration: '4:00'
     },
-    {
-      id: 10,
-      title: 'Blinding Lights',
-      artist: 'The Weeknd',
-      year: '2019',
-      album: 'Blinding Lights',
-      genres: ['Rhythm and blues', 'Soul', 'Synthwave'],
-      producer: 'XO',
-      songwriter: 'Abel Tesfaye',
-      duration: '3:22'
-    }
-
 
   ]
 
