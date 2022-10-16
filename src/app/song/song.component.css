@@ -1,9 +1,25 @@
-/* Estilos minimos componente canción */
+
+/* Estilos minimos componente song */
+
+.header{
+  background-color: #3D0B61;
+  padding: 30px;
+}
+
+.footer{
+  background-color: #3D0B61;
+  padding: 59.5px;
+}
+
+html{
+  background-color: #2C063D;
+}
 
 .song-header{
   background-color: #2C063D;
   padding: 15px;
 }
+
 .song-body{
   background-color: #3D0B61;
   padding: 25px;
@@ -33,4 +49,12 @@ li{
   color: #E8D3B5;
   font-size: 16px;
   text-align: center;
+}
+
+a{
+  font-family: 'Roboto';
+  color: #EB9113;
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
 }

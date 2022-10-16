@@ -1,10 +1,19 @@
-<!-- Estructura HTML de componente canción -->
-<a routerLink="/songlist" >Home</a>
+
+<!-- Estructura HTML de componente song -->
+
+<html>
+
+<div class="header">
+  <a routerLink="/songlist" >PLAYSOUND</a>
+</div>
+
 <div class="song">
+
   <div class="song-header">
     <h2 class="song-title">{{song.title}}</h2>
     <h4 class="song-subtitle">{{song.artist}}</h4>
   </div>
+
   <div class="song-body">
     <ul class="song-detail">
       <li class="song-detail-item"><strong>Album:</strong> {{song.album}}</li>
@@ -20,4 +29,10 @@
       <li class="song-detail-item"><strong>Productor:</strong> {{song.producer}}</li>
     </ul>
   </div>
+
 </div>
+
+<div class="footer">
+</div>
+
+</html>

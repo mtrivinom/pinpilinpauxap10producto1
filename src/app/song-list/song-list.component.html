@@ -1,28 +1,38 @@
-<div class="card border-primary mb-3" class="center-peke">
 
-  <div class="card-body text-primary">
-    <h5 class="card-title">Song List</h5>
-  </div>
+<!-- Estructura HTML de componente song-list -->
+
+<html>
+
+<div class="header">
+  <a routerLink="/songlist" >PLAYSOUND</a>
+</div>
+
+<div class="center-peke">
 
   <table class="table table-bordered table-striped">
     <thead>
-
       <tr>
         <th>Title</th>
         <th>Artist</th>
         <th>Duration</th>
       </tr>
     </thead>
-<tbody>
 
+<tbody>
   <tr *ngFor="let item of songs">
     <td>
-      <a routerLink="/song/{{item.id}}">{{item.title}}</a>
+      <b routerLink="/song/{{item.id}}">{{item.title}}</b>
     </td>
     <td>{{item.artist}}</td>
     <td>{{item.duration}}</td>
      </tr>
 </tbody>
+
   </table>
 
 </div>
+
+<div class="footer">
+</div>
+
+</html>
