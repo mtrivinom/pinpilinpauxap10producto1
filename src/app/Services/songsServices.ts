@@ -1,6 +1,19 @@
 /**
  * Clase que está simulando el servicio de una lista de canciones
  */
+
+export interface songs {
+   id: number;
+   title: string;
+   artist: string;
+   year: string;
+   album: string;
+   genres: string;
+   producer: string;
+   songwriter: string;
+   duration: string;
+}
+
 export class SongsServices{
   songs = [
     {
