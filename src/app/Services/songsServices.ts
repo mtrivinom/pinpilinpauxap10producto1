@@ -4,6 +4,7 @@ import { Song } from "../song/song";
 /**
  * Clase que está simulando el servicio de una lista de canciones
  */
+
 export class SongsServices{
   songsList : Song[] =
   [
@@ -106,6 +107,7 @@ export class SongsServices{
       songwriter: 'Abel Tesfaye',
       duration: '4:00'
     },
+
     {
       id: 10,
       title: 'Blinding Lights',
@@ -117,6 +119,7 @@ export class SongsServices{
       songwriter: 'Abel Tesfaye',
       duration: '3:22'
     }
+
 
 
   ]
