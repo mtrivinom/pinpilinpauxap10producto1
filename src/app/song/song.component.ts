@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SongsServices } from '../Services/songsServices';
+import { Song } from './song';
 
 @Component({
   selector: 'app-song',
@@ -9,8 +10,8 @@ import { SongsServices } from '../Services/songsServices';
 })
 export class SongComponent implements OnInit {
  /* Declaración de variables/atributos necesarios **/
-  song: any;
-  songs: any;
+  song: Song;
+  songs: Song[] =  new SongsServices().songsList;;
   songId: string | null = '';
   listeners: string = '';
 
@@ -19,11 +20,12 @@ export class SongComponent implements OnInit {
  * @param activatedRoute provee acceso a la información relacionadas con las rutas
  * de un componente
  */
-  constructor(
-    private activatedRoute: ActivatedRoute)
+  constructor(private activatedRoute: ActivatedRoute)
     {
+      this.song = new Song();
       /** Creamos una instancia de songServices que contiene el array de canciones */
-      this.songs = new SongsServices().songs;
+      //this.songs =
+
     }
 /**
  * Ciclo de vida que se ejecuta al inicio de montar el componente.
@@ -34,6 +36,11 @@ export class SongComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe((params: { get: (arg0: string) => string | null; }) => {
       this.songId = params.get('id');
     });
-    this.song = this.songs.find((item:any) => item.id == this.songId);
+
+    // se pone el signo de admiracion para que el retorno
+    //del metodo find solo sea de tipo de la clase Song
+    this.song = this.songs.find((item:Song) => item.id == Number(this.songId))!;
+
+
   }
 }
