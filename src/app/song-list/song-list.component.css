@@ -6,13 +6,22 @@
   padding: 30px;
 }
 
-.footer{
-  background-color: #3D0B61;
-  padding: 59.5px;
+footer{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  text-align: center;
+  background-color: #4D4D4D;
+  color: #FFFF;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  padding: 5px;
 }
 
+
 a{
-  font-family: 'Roboto';
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #EB9113;
   font-size: 20px;
   text-align: left;
@@ -37,25 +46,25 @@ tbody{
 }
 
 th{
-  font-family: 'Roboto';
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: bold;
   text-decoration: none;
 }
 
 td{
-  font-family: 'Roboto';
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #000000;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: normal;
   text-decoration: none;
 }
 
 b{
-  font-family: 'Roboto';
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: normal;
   text-decoration: none;
 }
